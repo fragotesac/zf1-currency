@@ -544,7 +544,6 @@ class Zend_CurrencyTest extends PHPUnit\Framework\TestCase
     public function testRegistryLocale()
     {
         $locale = new Zend_Locale('de_AT');
-        require_once 'Zend/Registry.php';
         Zend_Registry::set('Zend_Locale', $locale);
 
         $currency = new Zend_Currency('EUR');
